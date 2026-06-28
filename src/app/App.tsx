@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "../pages/Home/Home";
 import { ThemeProvider } from "@/components/ui/shadcn/theme-provider";
+import Login from "@/pages/auth/Login";
+import SignUp from "@/pages/auth/SignUp";
 
 const App = () => {
   return (
@@ -8,6 +10,8 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
