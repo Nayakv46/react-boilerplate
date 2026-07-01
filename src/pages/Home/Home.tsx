@@ -2,6 +2,8 @@ import { Link } from "react-router";
 import { ChevronRight } from "lucide-react";
 
 const Home = () => {
+  const linkClassName =
+    "flex items-center justify-between gap-2 rounded-lg border py-2 px-4 hover:bg-accent transition shadow-lg";
   return (
     <div className="flex flex-col gap-4 p-2">
       <h4 className="max-w-xl text-center mx-auto">
@@ -14,31 +16,19 @@ const Home = () => {
       </p>
 
       <div className="grid grid-cols-4 gap-4">
-        <Link
-          to="/components"
-          className="flex items-center justify-between gap-2 rounded-lg border py-2 px-4 hover:bg-accent transition"
-        >
+        <Link to="/components" className={linkClassName}>
           Components
           <ChevronRight size={20} />
         </Link>
-        <Link
-          to="/form"
-          className="flex items-center justify-between gap-2 rounded-lg border py-2 px-4 hover:bg-accent transition"
-        >
+        <Link to="/form" className={linkClassName}>
           Form
           <ChevronRight size={20} />
         </Link>
-        <Link
-          to="/charts"
-          className="flex items-center justify-between gap-2 rounded-lg border py-2 px-4 hover:bg-accent transition"
-        >
+        <Link to="/charts" className={linkClassName}>
           Charts
           <ChevronRight size={20} />
         </Link>
-        <Link
-          to="/tables"
-          className="flex items-center justify-between gap-2 rounded-lg border py-2 px-4 hover:bg-accent transition"
-        >
+        <Link to="/tables" className={linkClassName}>
           Tables
           <ChevronRight size={20} />
         </Link>

@@ -10,7 +10,7 @@ const ComponentListElementWrapper = ({
   return (
     <div
       className={
-        "flex flex-col gap-2 py-2 px-4 border rounded-lg hover:bg-accent transition"
+        "flex flex-col gap-2 py-2 px-4 border rounded-lg hover:bg-accent transition shadow-lg"
       }
     >
       <p>{title}</p>
