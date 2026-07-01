@@ -14,6 +14,10 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/components" element={<Home />} />
+          <Route path="/form" element={<Home />} />
+          <Route path="/charts" element={<Home />} />
+          <Route path="/tables" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

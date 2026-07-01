@@ -4,7 +4,7 @@ import { LuSettings } from "react-icons/lu";
 import PopoverWrapper from "../ui/shadcn/PopoverWrapper";
 import { useTheme } from "../ui/shadcn/theme-provider";
 import { Switch } from "../ui/shadcn/switch";
-// import { useEngagementsStore } from "@/stores/engagementsStore";
+// import { useEngagementsStore } from "@/stores/engagementsStore"; change to partner store
 
 const Navbar = () => {
   // const {
