@@ -5,6 +5,7 @@ import { LuSettings } from "react-icons/lu";
 import Loader from "@/components/Loader/Loader";
 import TooltipWrapper from "@/components/ui/shadcn/TooltipWrapper";
 import { BsExclamationCircle } from "react-icons/bs";
+import Toasts from "./Toasts";
 
 const Components = () => {
   return (
@@ -67,6 +68,8 @@ const Components = () => {
           />
         </ComponentListElementWrapper>
       </div>
+
+      <Toasts />
     </div>
   );
 };
