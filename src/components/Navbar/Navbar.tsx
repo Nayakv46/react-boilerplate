@@ -6,6 +6,31 @@ import { useTheme } from "../ui/shadcn/theme-provider";
 import { Switch } from "../ui/shadcn/switch";
 // import { useEngagementsStore } from "@/stores/engagementsStore"; change to partner store
 
+const popoverButtonClassName =
+  "flex gap-2 justify-between text-start rounded-none cursor-pointer px-3 py-1 text-sm text-foreground transition hover:bg-accent";
+
+const HomePageButtons = () => {
+  return (
+    <>
+      <Link to="/" className={popoverButtonClassName}>
+        Home
+      </Link>
+      <Link to="/components" className={popoverButtonClassName}>
+        Components
+      </Link>
+      <Link to="/form" className={popoverButtonClassName}>
+        Form
+      </Link>
+      <Link to="/charts" className={popoverButtonClassName}>
+        Charts
+      </Link>
+      <Link to="/tables" className={popoverButtonClassName}>
+        Tables
+      </Link>
+    </>
+  );
+};
+
 const Navbar = () => {
   // const {
   //   reset,
@@ -47,6 +72,7 @@ const Navbar = () => {
                   }
                   description={
                     <div className="flex flex-col ">
+                      <HomePageButtons />
                       <button
                         className="text-start rounded-none px-3 py-1 text-sm text-foreground transition hover:bg-accent"
                         onClick={() => {
@@ -57,7 +83,7 @@ const Navbar = () => {
                       >
                         Sign out
                       </button>
-                      <div className="flex gap-2 justify-between text-start rounded-none cursor-pointer px-3 py-1 text-sm text-foreground transition hover:bg-accent">
+                      <div className={popoverButtonClassName}>
                         <p>Dark mode</p>
                         <Switch
                           checked={theme === "dark"}
@@ -99,7 +125,8 @@ const Navbar = () => {
                 }
                 description={
                   <div className="flex flex-col ">
-                    <div className="flex gap-2 justify-between text-start rounded-none cursor-pointer px-3 py-1 text-sm text-foreground transition hover:bg-accent">
+                    <HomePageButtons />
+                    <div className={popoverButtonClassName}>
                       <p>Dark mode</p>
                       <Switch
                         checked={theme === "dark"}
