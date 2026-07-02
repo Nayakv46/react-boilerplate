@@ -5,6 +5,12 @@ import { LuSettings } from "react-icons/lu";
 import Loader from "@/components/Loader/Loader";
 import TooltipWrapper from "@/components/ui/shadcn/TooltipWrapper";
 import { BsExclamationCircle } from "react-icons/bs";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/shadcn/accordion";
 
 const BaseComponents = () => {
   return (
@@ -66,6 +72,18 @@ const BaseComponents = () => {
             content={"Warning: This is a tooltip example."}
             triggerClassName="w-max"
           />
+        </ComponentListElementWrapper>
+        <ComponentListElementWrapper title="Accordion">
+          <Accordion type="single" collapsible className="max-w-lg">
+            <AccordionItem value="entry-1">
+              <AccordionTrigger>Entry 1</AccordionTrigger>
+              <AccordionContent>Entry 1 content</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="entry-2">
+              <AccordionTrigger>Entry 2</AccordionTrigger>
+              <AccordionContent>Entry 2 content</AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </ComponentListElementWrapper>
       </div>
     </div>
