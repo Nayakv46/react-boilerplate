@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/shadcn/button";
 const Toasts = () => {
   return (
     <div className="flex flex-col gap-4">
-      <p>Toasts</p>
+      <h4>Toasts</h4>
       <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
         <ComponentListElementWrapper title="Success Toast">
           <Button
