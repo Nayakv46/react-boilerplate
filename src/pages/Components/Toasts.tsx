@@ -17,7 +17,7 @@ const Toasts = () => {
         <ComponentListElementWrapper title="Success Toast">
           <Button
             type="button"
-            className="bg-success"
+            className="bg-success cursor-pointer"
             onClick={() => showSuccessToast("This is a success toast!")}
           >
             Show Success Toast
@@ -26,7 +26,7 @@ const Toasts = () => {
         <ComponentListElementWrapper title="Error Toast">
           <Button
             type="button"
-            className="bg-destructive"
+            className="bg-destructive cursor-pointer"
             onClick={() => showErrorToast("This is an error toast!")}
           >
             Show Error Toast
@@ -35,7 +35,7 @@ const Toasts = () => {
         <ComponentListElementWrapper title="Info Toast">
           <Button
             type="button"
-            className="bg-info"
+            className="bg-info cursor-pointer"
             onClick={() => showInfoToast("This is an info toast!")}
           >
             Show Info Toast
@@ -44,7 +44,7 @@ const Toasts = () => {
         <ComponentListElementWrapper title="Warning Toast">
           <Button
             type="button"
-            className="bg-warning"
+            className="bg-warning cursor-pointer"
             onClick={() => showWarningToast("This is a warning toast!")}
           >
             Show Warning Toast
@@ -53,6 +53,7 @@ const Toasts = () => {
         <ComponentListElementWrapper title="Loading Toast">
           <Button
             type="button"
+            className="cursor-pointer"
             onClick={() => {
               showLoadingToast("This is a loading toast!", {
                 id: "loading-toast",

@@ -90,10 +90,13 @@ const AlertDialogWrapper = ({
             </AlertDialogHeader>
             {showActions && (
               <AlertDialogFooter>
-                <AlertDialogCancel onClick={onCancel}>
+                <AlertDialogCancel
+                  onClick={onCancel}
+                  className="cursor-pointer"
+                >
                   {cancelText}
                 </AlertDialogCancel>
-                <AlertDialogAction onClick={onClick}>
+                <AlertDialogAction onClick={onClick} className="cursor-pointer">
                   {confirmText}
                 </AlertDialogAction>
               </AlertDialogFooter>

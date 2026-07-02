@@ -24,6 +24,7 @@ const Components = () => {
               type: "button",
               text: "Delete",
               disabled: false,
+              className: "cursor-pointer",
             }}
           />
         </ComponentListElementWrapper>
@@ -41,13 +42,13 @@ const Components = () => {
               <div className="flex flex-col ">
                 <button
                   type="button"
-                  className="flex gap-2 justify-between text-start rounded-none px-3 py-1 text-sm text-foreground transition hover:bg-accent"
+                  className="flex gap-2 justify-between text-start rounded-none px-3 py-1 text-sm text-foreground transition hover:bg-accent cursor-pointer"
                 >
                   Button 1
                 </button>
                 <button
                   type="button"
-                  className="flex gap-2 justify-between text-start rounded-none px-3 py-1 text-sm text-foreground transition hover:bg-accent"
+                  className="flex gap-2 justify-between text-start rounded-none px-3 py-1 text-sm text-foreground transition hover:bg-accent cursor-pointer"
                 >
                   Button 2
                 </button>
